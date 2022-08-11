@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
-    <element audit="true" extends="task" label="NeedIt" max_length="40" name="x_58872_needit_needit" type="collection">
+    <element audit="true" extends="task" label="NeedIt" max_length="40" name="x_58872_needit_needit" sizeclass="13" type="collection">
+        <element attributes="target_field=percent_complete_target,target_threshold_colors=0:color1;33:color2;66:color3;90:color4,target_field=target" label="% complete" max_length="15" name="complete" type="percent_complete"/>
         <element label="New field 2" max_length="40" name="new_field_2" type="integer"/>
         <element label="Ne field 1" max_length="40" name="ne_field_1" type="integer"/>
+        <element label="Target" max_length="20" name="target" type="decimal"/>
         <element label="New field 3" max_length="40" name="u_nwe_field_3" type="integer"/>
         <element attributes="encode_utf8=false" label="Requested for" mandatory="true" max_length="32" name="u_requested_for" reference="sys_user" type="reference"/>
         <element attributes="edge_encryption_enabled=true" choice="3" default="legal" label="Request type" mandatory="true" max_length="40" name="u_request_type" type="string">
